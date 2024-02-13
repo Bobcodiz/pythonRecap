@@ -1,6 +1,6 @@
 class Channels():
     def __init__(self):
-        self.channels = ["Citizen","NTV","Ramogi","Inoro","K24","KTN Home","KTN News"]
+        self.channels = ["Citizen", "NTV", "Ramogi", "Inoro", "K24", "KTN Home", "KTN News"]
         self.index = -1
 
     def __iter__(self):
@@ -12,6 +12,7 @@ class Channels():
             raise StopIteration
         return self.channels[self.index]
 
-chanels = Channels()
-for chanel in chanels:
+
+channels = Channels()
+for chanel in channels:
     print(chanel)

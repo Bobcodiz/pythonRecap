@@ -8,12 +8,12 @@ print(s)
 with open("./book.txt", "w") as b:
     b.write(s)
 
-#to read from thr file
+# to read from the file
 read = open("./book.txt", "r")
 f = read.read()
 print(f)
 
-#load it to a string
+# load it to a string
 
 k = json.loads(f)
 print(k)
