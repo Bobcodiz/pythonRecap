@@ -1,3 +1,4 @@
+from util import timeit
 expense = [2200, 2350, 2600, 2130, 2190]
 
 january = expense[0]
@@ -10,7 +11,7 @@ print("Enter the month, all in lowercase!")
 month1 = input("Enter the first month: ")
 month2 = input("Enter the second month: ")
 
-
+@timeit
 def expense_difference(month1_val, month2_val):
     diff = month2_val - month1_val
     print("Expense difference between", month1, "and", month2, "is:", diff)
